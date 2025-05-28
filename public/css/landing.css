@@ -1,0 +1,73 @@
+    
+body {
+    background-image: url('../images/bg.png');
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #004aad;
+    border-bottom: black 2px solid; /* Add a border */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-align: left;
+    width: 20rem; /* Adjust the size of the logo */
+    height: auto;
+    padding-right: 0%;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: inline-block;
+
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    margin-right: auto; /* Push the buttons to the left */
+    display: flex; /* Ensure buttons are aligned horizontally */
+    align-items: center; 
+}
+
+.nav-buttons .btn {
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 0.5rem; /* Add spacing between buttons */
+
+}
+
+/* Main content */
+.content {
+    padding: 0rem;
+    background-color: rgba(14, 165, 233, 0.8); /* Semi-transparent blue background */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex-end; /* Use flexbox for layout */
+    width: 60%; 
+    margin-left: auto; /* Center the content horizontally */
+    margin-top: 0%;
+    align-self: flex-end;
+    border: black 2px solid; /* Add a border */
+    align-content: start;
+}
+
+/* Welcome text */
+.welcome-text {
+    font-size: 1.2rem; /* Adjust font size for readability */
+    line-height: 1.5;
+    color: black;
+    margin-left: 7rem;
+    margin-right: -5rem;
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for better readability */
+}

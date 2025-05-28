@@ -1,0 +1,140 @@
+/* Dashboard CSS */
+body {
+    background-image: url('../images/bg.png');
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keep the background fixed */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 1rem;
+    display: absolute; /* Position the navbar at the top */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem; 
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+#CurrentPage {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Logo container */
+.logo-container {
+    position: absolute; /* Position the logo relative to the viewport */
+    top: 20px; /* Adjust the vertical position */
+    left: 20px; /* Adjust the horizontal position */
+    z-index: 999; /* Ensure the logo is above all other elements */
+}
+
+/* Logo image */
+.logo {
+    width: 10rem; /* Adjust the size of the logo */
+    height: auto;
+    margin-top: 1%;
+}
+
+/* Dashboard card */
+.dashboard-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/* Table styles */
+.table th {
+    font-weight: bold;
+    text-align: left;
+}
+
+.table td {
+    padding: 0.5rem;
+}
+
+/* Input styles */
+.course-input, .grade-input, .units-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #000; /* Black border */
+    margin-bottom: 1rem; /* Space between inputs */
+    z-index: 1; /* Ensure inputs are above the line */
+    position: relative; /* Position relative to the parent */
+
+}
+.grade-input {
+    background-color: #facc15; /* Yellow */
+}
+
+
+.modal-content {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-color: rgba(59, 48, 48, 0.259); /* Semi-transparent white */
+    background-blend-mode: overlay; /* Blend the image with the color */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+} 
+
+.modal-dialog {
+    max-width: 75%;
+    max-height: 90%;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.modal-body {
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+.modal-body .table {
+   background-color: rgba(91, 87, 87, 0);
+}
+
+.modal-body .table th{
+    color: white;
+}
+.modal-body .table th, .modal-body .table td {
+   background-color: rgba(59, 48, 48, 0);
+    color: rgb(255, 255, 255);
+}
+
+.modal-body .table input{
+    border: none;
+    border-bottom: none;
+}

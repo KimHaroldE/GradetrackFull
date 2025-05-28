@@ -1,0 +1,136 @@
+body {
+            background-image: url('../images/bg.png');
+            overflow-x: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .header {
+            background-color:   #004aad;
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Logo container */
+        .logo-container {
+            position: absolute; /* Position the logo absolutely */
+            top: 0; /* Place it at the top of the page */
+            left: 10%; /* Center it horizontally */
+            transform: translateX(-50%); /* Adjust for centering */
+            z-index: 10; /* Ensure it appears above other elements */
+            text-align: left;
+            margin-top: 1rem; /* Add some spacing from the top */
+        }
+        
+        /* Logo styling */
+        .logo {
+            width: 150px; /* Adjust the size of the logo */
+            height: auto;
+        }
+        
+        .signup-card {
+            background-color: #0ea5e9;
+            border-radius: 1rem;
+            position: relative;
+            z-index: 1;
+            margin-top: 5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+            border: black 2px solid;
+        }
+        
+        .form-control {
+            border-radius: 50px;
+            background-color: #e5e7eb;
+            border: black 2px solid;
+        }
+        
+        .profile-upload {
+            background-color: #e5e7eb;
+            border-radius: 12px;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Profile upload container */
+        .profile-upload-container {
+            position: relative;
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            width: 150px;
+            height: 150px;
+            background-color: #e5e7eb; /* Light gray background */
+            border: 2px solid #ddd; /* Border around the container */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        /* Profile preview image */
+        .profile-preview {
+            width: calc(100% - 6px); /* Subtract 6px to account for the 3px margin on all sides */
+            height: calc(100% - 6px); /* Subtract 6px to account for the 3px margin on all sides */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            display: block;
+            margin: 3px; /* Add a 3px margin around the image */
+        }
+
+        /* Upload text */
+
+        .upload-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            color: white;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 5px 0;
+            font-weight: bold;
+        }
+
+        /* Hide the default file input */
+        input[type="file"].d-none {
+            display: none;
+        }
+        
+        
+        .upload-icon {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .col-auto {
+            flex: 1;
+            display: flex;
+            justify-content: right;
+        }
+
+        /* Profile Picture Upload */
+        .mb-3.row.align-items-center {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .col-sm-3.col-form-label.text-white.fw-bold {
+            color: white;
+            font-weight: bold;
+        }
+
+        .col-sm-5.text-center {
+            text-align: center;
+        }
+
+        .profile-upload-label {
+            cursor: pointer;
+        }
